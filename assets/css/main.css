@@ -1,0 +1,177 @@
+/* Page Styling */
+html, body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, Apple Color Emoji;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  min-height: 100%;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(-50deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 800% 800%;
+  -webkit-animation: gradientChange 15s ease infinite;
+          animation: gradientChange 15s ease infinite;
+  -webkit-animation-delay: 5ms;
+          animation-delay: 5ms;
+}
+
+.home,
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 90vh;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .home,
+  .content {
+    max-height: 100vh;
+  }
+}
+
+.home .content > div {
+  padding: 50px 30px;
+}
+
+.home .content > div .title {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .home .content > div .description {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 568px) {
+  .home .content > div .description {
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn a {
+  width: 120px;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .btn a {
+    padding: 0.7rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.btn a:hover {
+  background: white;
+  color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    margin-top: -50px;
+    font-size: 13px;
+  }
+}
+
+.footer #madewlove {
+  z-index: 3;
+  opacity: 0.4;
+}
+
+.footer #creator {
+  text-decoration: none;
+}
+
+.footer #creator:link, .footer #creator:visited {
+  color: white;
+}
+
+.footer #creator:hover {
+  text-decoration: underline;
+}
+
+/* Dark overlay */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Gradient Animation */
+@-webkit-keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

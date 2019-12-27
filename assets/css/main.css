@@ -6,12 +6,6 @@ html, body {
   min-height: 100%;
   color: white;
   overflow: hidden;
-  background: linear-gradient(-50deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 800% 800%;
-  -webkit-animation: gradientChange 15s ease infinite;
-          animation: gradientChange 15s ease infinite;
-  -webkit-animation-delay: 5ms;
-          animation-delay: 5ms;
 }
 
 .home,
@@ -179,8 +173,10 @@ html, body {
 #particles-js{
   width: 100%;
   height: 100%;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background: linear-gradient(-50deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 800% 800%;
+  -webkit-animation: gradientChange 15s ease infinite;
+          animation: gradientChange 15s ease infinite;
+  -webkit-animation-delay: 5ms;
+          animation-delay: 5ms;
 }
